@@ -13,7 +13,7 @@ import Dashboard from './Pages/Dashboard/Index';
 
 // BEGIN APOLLO CONFIG
 const client = new ApolloClient({
-    uri: 'http://localhost:1338',
+    uri: 'https://expo-boilerplate-frontend.netlify.com',
 });
 // END APOLLO CONFIG
 
