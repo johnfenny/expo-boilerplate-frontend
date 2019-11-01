@@ -149,6 +149,9 @@ class Signup extends Component {
                         {(mutation, { loading, error, data }) => {
                             if (error) {
                                 alert('Error!', error.message);
+                                console.log("loading", loading);
+                                console.log("error", error);
+                                console.log("data", data);
                             }
 
                             return (
