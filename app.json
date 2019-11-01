@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "Expo Boilerplate",
+    "description": "ExpoBoilerplate Description",
+    "slug": "ExpoBoilerplate",
+    "privacy": "public",
+    "sdkVersion": "35.0.0",
+    "packagerOpts": {
+			"sourceExts": ["js", "jsx", "scss", "sass"],
+			"transformer": "node_modules/react-native-sass-transformer/index.js"
+		},
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./public/native/icon.png",
+    "splash": {
+      "image": "./public/native/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "assets/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mycompany.mynativeapp"
+    },
+    "android": {
+      "package": "com.mycompany.mynativeapp"
+    }
+  }
+}

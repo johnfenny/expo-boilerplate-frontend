@@ -1,0 +1,88 @@
+{
+  "name": "react-native-expo-web",
+  "description": "All-in-one expo and react-native-web project",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": {
+    "name": "Hossein Dehnokhalaji",
+    "email": "hossein.dehnavi98@yahoo.com"
+  },
+  "repository": {
+    "url": "git+https://github.com/iamhosseindhv/react-native-expo-web.git",
+    "type": "git"
+  },
+  "expo": {	
+    "packagerOpts": {	
+      "sourceExts": [	
+        "js",	
+        "jsx",	
+        "scss",	
+        "sass"	
+      ],	
+      "transformer": "node_modules/react-native-sass-transformer/index.js"	
+    }	
+  },
+  "dependencies": {
+    "@react-navigation/core": "^3.4.2",
+    "@react-navigation/web": "^1.0.0-alpha.9",
+    "apollo-boost": "^0.4.3",
+    "expo": "^35.0.0",
+    "graphql": "^14.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "node-sass": "^4.12.0",
+    "react": "16.8.3",
+    "react-apollo": "^2.5.8",
+    "react-art": "16.5.2",
+    "react-dom": "16.8.3",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-35.0.0.tar.gz",
+    "react-native-web": "^0.11.7",
+    "react-navigation": "^3.11.0",
+    "react-scripts": "2.1.1"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "start.native": "expo start",
+    "start.android": "expo start --android",
+    "start.ios": "expo start --ios",
+    "build.android": "expo build:android",
+    "build.ios": "expo build:ios",
+    "publish.native": "expo publish"
+  },
+  "devDependencies": {
+    "babel-preset-expo": "^7.0.0",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-config-react-app": "3.0.5",
+    "eslint-plugin-react-native": "3.5.0",
+    "react-app-rewired": "1.6.2"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "bugs": {
+    "url": "https://github.com/iamhosseindhv/react-native-expo-web/issues"
+  },
+  "contributors": [
+    "Hossein Dehnokhalaji (https://www.iamhosseindhv.com/)"
+  ],
+  "keywords": [
+    "react",
+    "reactjs",
+    "react-native",
+    "react-native-web",
+    "expo",
+    "ios",
+    "android",
+    "boilderplate",
+    "template"
+  ],
+  "rules": {
+    "linebreak-style": 0
+  }
+}

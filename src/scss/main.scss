@@ -1,0 +1,103 @@
+// BEGIN COMMON
+.text-center {
+    text-align: center;
+}
+
+// BEGIN NAVBAR
+.navbarContainer {
+    width: 100%;
+    display: grid;
+    background-color: #c4c4c4;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.landingPageButton {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    border-radius: 5px;
+}
+.signUpButton {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    border-radius: 5px;
+}
+.loginButton {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    border-radius: 5px;
+}
+// END NAVBAR
+.input {
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 15px;
+    border: 1px solid black;
+}
+.formLabel {
+    text-align: center;
+}
+// END COMMON
+
+
+// BEGIN LANDING PAGE
+.landing-page-label {
+    text-align: center;
+}
+// END LANDING PAGE
+
+
+// BEGIN LOGIN PAGE
+.loginAccountButton {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+}
+.loginFormContainer {
+    width: 500px;
+    text-align: center;
+    margin: auto;
+}
+// END LOGIN PAGE
+
+
+// BEGIN SIGNUP PAGE
+.signUpContainer {
+    margin: auto;
+    width: 500px;
+}
+.createAccountButton {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+}
+.formContainer {
+    width: 500px;
+    text-align: 'center';
+    margin: 'auto';
+}
+// END SIGNUP PAGE
+
+// BEGIN DASHBOARD
+.dashboard-info {
+    text-align: center;
+}
+.loggedInUser {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+}
+// END DASHBOARD
