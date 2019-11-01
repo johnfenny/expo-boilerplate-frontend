@@ -13,7 +13,7 @@ import Dashboard from './Pages/Dashboard/Index';
 
 // BEGIN APOLLO CONFIG
 const client = new ApolloClient({
-    uri: 'https://expo-boilerplate-backend.netlify.com',
+    uri: 'https://expo-boilerplate-backend.herokuapp.com/',
 });
 // END APOLLO CONFIG
 
