@@ -71,8 +71,6 @@ class Signup extends Component {
                 });
             });
         });
-
-        findUserDeviceType()
     }
 
     emailInput = (event) => {
