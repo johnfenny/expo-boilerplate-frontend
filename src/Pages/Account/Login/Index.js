@@ -94,13 +94,36 @@ class Login extends Component {
             });
             this.props.client.query({
                 query: gql`
-                query ($email: String!, $password: String!, $ipAddress: String!) {
-                    getExistingUser(email: $email, password: $password, ipAddress: $ipAddress)
+                query ($email: String!, $password: String!, $clientMetadata: JSON!) {
+                    getExistingUser(email: $email, password: $password, clientMetadata: $clientMetadata)
                 }`,
                 variables: {
                     email: this.state.email,
                     password: this.state.password,
-                    ipAddress: this.state.ipAddress,
+                    clientMetadata: {
+                        ipAddress: this.state.ipAddress,
+                        langauge: window.navigator.langauge,
+                        platform: window.navigator.platform,
+                        connection: window.navigator.connection.effectiveType,
+                        cookieEnabled: window.navigator.cookieEnabled,
+                        deviceMemory: window.navigator.deviceMemory,
+                        doNotTrack: window.navigator.doNotTrack,
+                        product: window.navigator.product,
+                        geolocation: window.navigator.geolocation,
+                        styleMedia: window.styleMedia.type,
+                        orientation: window.screen.orientation.type,
+                        height: window.screen.height,
+                        width: window.screen.width,
+                        timezone: new Date().getTimezoneOffset()/60,
+                        timestamp: new Date().getTime(),
+                        referrer: document.referrer,
+                        previousSites: window.history.length,
+                        browserName: window.navigator.appName,
+                        online: window.navigator.online,
+                        appVersion: window.navigator.appVersion,
+                        userAgent: window.navigator.userAgent,
+                        javaEnabled: window.navigator.javaEnabled,
+                    },
                 },
             }).then((response) => {
                 setCookie('JSONWebToken', response.data.getExistingUser, 1);
