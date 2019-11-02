@@ -23,7 +23,7 @@ class Signup extends Component {
             password: '',
             confirmPassword: '',
             ipAddress: '',
-            createAccountButtonText: 'Login',
+            createAccountButtonText: 'Signup',
         };
     }
 
@@ -71,6 +71,8 @@ class Signup extends Component {
                 });
             });
         });
+
+        findUserDeviceType()
     }
 
     emailInput = (event) => {
