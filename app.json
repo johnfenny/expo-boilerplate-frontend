@@ -1,23 +1,4 @@
 {
-  "name": "heroku expo-boilerplate",
-  "description": "",
-  "repository": "",
-  "logo": "",
-  "keywords": [],
-  "image": "heroku/nodejs",
-  "addons": [
-
-  ],
-  "buildpacks": [
-
-  ],
-  "env": {
-  },
-  "formation": {
-  },
-  "scripts": {
-  },
-  "stack": "heroku-18",
   "expo": {
     "name": "Expo Boilerplate",
     "description": "ExpoBoilerplate Description",
