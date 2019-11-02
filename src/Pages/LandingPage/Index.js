@@ -46,7 +46,7 @@ class LandingPage extends Component {
         }
 
         decodeJSONWebToken().then((decodedJSONWebToken) => {
-            if (decodedJSONWebTok1 !== 'no cookie' || decodedJSONWebToken !== 'expired') {
+            if (decodedJSONWebToken !== 'no cookie' || decodedJSONWebToken !== 'expired') {
                 navigate('dashboard');
             }
         });
