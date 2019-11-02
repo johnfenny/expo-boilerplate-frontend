@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import {
     View, Button, Text,
 } from 'react-native';
-
 import { getCookie, deleteCookie } from '../../utils/cookie-logic';
+
+require('dotenv');
 
 const jwt = require('jsonwebtoken');
 
@@ -45,10 +46,8 @@ class LandingPage extends Component {
         }
 
         decodeJSONWebToken().then((decodedJSONWebToken) => {
-            if (decodedJSONWebToken !== 'no cookie' && decodedJSONWebToken !== 'expired') {
-                navigate('Dashboard');
-            } else if (getCookie('JSONWebToken')) {
-                deleteCookie('JSONWebToken');
+            if (decodedJSONWebTok1 !== 'no cookie' || decodedJSONWebToken !== 'expired') {
+                navigate('dashboard');
             }
         });
     }
