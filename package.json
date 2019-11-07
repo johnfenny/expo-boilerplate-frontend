@@ -11,16 +11,16 @@
     "url": "git+https://github.com/iamhosseindhv/react-native-expo-web.git",
     "type": "git"
   },
-  "expo": {	
-    "packagerOpts": {	
-      "sourceExts": [	
-        "js",	
-        "jsx",	
-        "scss",	
-        "sass"	
-      ],	
-      "transformer": "node_modules/react-native-sass-transformer/index.js"	
-    }	
+  "expo": {
+    "packagerOpts": {
+      "sourceExts": [
+        "js",
+        "jsx",
+        "scss",
+        "sass"
+      ],
+      "transformer": "node_modules/react-native-sass-transformer/index.js"
+    }
   },
   "dependencies": {
     "@react-navigation/core": "^3.4.2",
@@ -29,6 +29,7 @@
     "expo": "^35.0.0",
     "graphql": "^14.4.2",
     "jsonwebtoken": "^8.5.1",
+    "newrelic": "^6.1.0",
     "node-sass": "^4.12.0",
     "react": "16.8.3",
     "react-apollo": "^2.5.8",
@@ -37,7 +38,8 @@
     "react-native": "https://github.com/expo/react-native/archive/sdk-35.0.0.tar.gz",
     "react-native-web": "^0.11.7",
     "react-navigation": "^3.11.0",
-    "react-scripts": "2.1.1"
+    "react-scripts": "2.1.1",
+    "save": "^2.4.0"
   },
   "scripts": {
     "start": "react-app-rewired start",

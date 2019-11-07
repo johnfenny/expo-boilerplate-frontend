@@ -1,3 +1,5 @@
+require('newrelic');
+
 import * as Expo from 'expo';
 import Dashboard from './src/index';
 
