@@ -9,8 +9,8 @@ import { getCookie, setCookie, deleteCookie } from '../../../utils/cookie-logic'
 const jwt = require('jsonwebtoken');
 
 const createNewUserMutation = gql`
-    mutation createNewUser($email: String!, $password: String!, $ipAddress: String!, $clientMetadata: JSON!) {
-        createNewUser(email: $email, password: $password, ipAddress: $ipAddress, clientMetadata: $clientMetadata)
+    mutation createNewUser($email: String!, $password: String!, $clientMetadata: JSON!) {
+        createNewUser(email: $email, password: $password, clientMetadata: $clientMetadata)
     }
 `;
 
@@ -23,7 +23,7 @@ class Signup extends Component {
             password: '',
             confirmPassword: '',
             ipAddress: '',
-            createAccountButtonText: 'Login',
+            createAccountButtonText: 'Signup',
         };
     }
 
@@ -180,8 +180,8 @@ class Signup extends Component {
                                                 variables: {
                                                     email: this.state.email,
                                                     password: this.state.password,
-                                                    ipAddress: this.state.ipAddress,
                                                     clientMetadata: {
+                                                        ipAddress: this.state.ipAddress,
                                                         langauge: window.navigator.langauge,
                                                         platform: window.navigator.platform,
                                                         connection: window.navigator.connection.effectiveType,
