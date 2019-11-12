@@ -1,3 +1,8 @@
-// ip address finder api has no limits
+npm install && npm start
 
-// clientjs documentation found here: https://github.com/jackspirou/clientjs
+backend = https://gitlab.com/joeyfenny/expo-boilerplate-backend
+
+
+// notes
+
+// ip address finder api has no limits
