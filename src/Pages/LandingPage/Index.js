@@ -46,9 +46,9 @@ class LandingPage extends Component {
         }
 
         decodeJSONWebToken().then((decodedJSONWebToken) => {
-            if (decodedJSONWebToken !== 'no cookie' || decodedJSONWebToken !== 'expired') {
-                navigate('dashboard');
-            }
+            // if (decodedJSONWebToken !== 'no cookie' || decodedJSONWebToken !== 'expired') {
+            //     navigate('dashboard');
+            // }
         });
     }
 
